@@ -4,5 +4,6 @@ module.exports = {
   testEnvironment: 'node',
   testMatch: null,
   testRegex: '/src/.*test.tsx?$',
-  collectCoverageFrom: ['./src/**/*.{ts,tsx}']
+  collectCoverage: true,
+  collectCoverageFrom: ['src/**/*.{ts,tsx}'],
 };
