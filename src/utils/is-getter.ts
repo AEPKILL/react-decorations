@@ -1,6 +1,6 @@
 import isFunction from './is-function';
 /**
- * 判断对象的属性是否是一个 geter 属性
+ * check if a property is a getter in the object instance
  *
  * @export
  * @param {object} obj

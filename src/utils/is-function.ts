@@ -1,6 +1,6 @@
 const FUNCION_TYPE_STRING = typeof isFunction;
 /**
- * 判断是否是一个函数
+ * check if an object is a function
  *
  * @export
  * @template T
