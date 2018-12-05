@@ -14,7 +14,8 @@ const FUNCION_TYPE_STRING = typeof isFunction;
 // tslint:disable-next-line:no-any
 export default function isFunction(fnLike: any): boolean {
   if (typeof fnLike === FUNCION_TYPE_STRING) {
-    const fnString = fnLike.toString();
+    // don't use fnLine.toString(), maybe it was overwrite `toString` method
+    const fnString = Function.prototype.toString.call(fnLike);
     // equal with fnString.startWith('class'), but `startWith` dont work on all browser and i don't want to use polyfill.
     // `const fn = class => class` SyntaxError
     return !(
